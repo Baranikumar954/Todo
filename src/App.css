@@ -303,3 +303,104 @@ footer button:hover {
   text-decoration: underline;
 
 }
+
+@media only screen and (max-width: 768px) {
+  .App {
+    font-size: 10px; /* Adjust font size for smaller screens */
+    padding: 0px;
+    position: static;
+    overflow: auto;
+  }
+
+  header {
+    height: 12vh; /* Reduce header height */
+    margin: 0px;
+  }
+
+  .header-container {
+    flex-direction: row; 
+    align-items: center;
+    /* gap: 5px; */
+  }
+
+  .head-titleContainer {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .head-weatherContainer button {
+    font-size: 8px; 
+    padding: 4px 6px; 
+  }
+
+  .head-timeContainder {
+    flex-direction: column; 
+    align-items: center;
+    padding: 3px; 
+  }
+
+  #cityNameInput {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  #cityNameInput input,
+  #cityNameInput button {
+    width: 100%; 
+    font-size: 10px;
+    padding: 6px;
+  }
+
+  .editTab {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Reduce spacing */
+    padding: 10px;
+  }
+
+  .editTab input[type="text"],
+  .editTab input[type="time"] {
+    width: 100%; /* Full-width inputs */
+    font-size: 10px; /* Adjust font size */
+  }
+
+  .editTab button {
+    width: 100%; /* Full-width button */
+    font-size: 10px; /* Adjust font size */
+  }
+
+  main {
+    height: 50vh; /* Allow main to adjust height automatically */
+    padding: 10px;
+  }
+
+  main ul {
+    gap: 5px; /* Reduce spacing between list items */
+  }
+
+  main ul li {
+    max-width: 100%; /* Full width for list items */
+  }
+
+  .List-Container label {
+    font-size: 18px; /* Smaller font for labels */
+  }
+
+  footer {
+    /* position: sticky; */
+    bottom: 0px;
+    height: 20vh;
+    padding: 10px;
+  }
+
+  footer button {
+    width: 40%; /* Full-width buttons */
+    font-size: 10px; /* Adjust font size */
+    padding: 8px 10px; /* Adjust padding */
+  }
+
+  #myWebLink a {
+    font-size: 16px; /* Smaller font for links */
+    word-wrap: break-word; /* Ensure long links wrap */
+  }
+}
